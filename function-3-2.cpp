@@ -1,6 +1,6 @@
 int median_array(int array[], int n){
     //Base case
-    if(n <= 1){
+    if(n <= 1 || n%2 == 0){
         return 0;
     }
     //Temporary storage
