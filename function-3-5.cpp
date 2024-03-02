@@ -6,8 +6,8 @@ double sum_even(double array[], int n){
         return array[1];
     }
     //
-    double res;
-    for(int i = 0; i <= n; i += 2){
+    double res = 0;
+    for(int i = 0; i < n - (n % 2); i += 2){
         res += array[i];
     }
     return res;
