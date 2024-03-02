@@ -1,10 +1,14 @@
 int num_count(int array[], int n, int number){
-    int i = 0;
+    //Base case
     if(n < 1){
-        return i;
+        return 0;
     }
-    do{
-       i++; 
-    }while(array[i] != number);
-    return i += 1;
+    //
+    int count = 0;
+    for(int i = 0; i < n; i++){
+        if(array[i] == number){
+            count++;
+        }
+    }
+    return count;
 }
