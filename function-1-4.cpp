@@ -6,4 +6,5 @@
     for(int i = 0; i < n; i++){
         sum += array[i] + second_array[i];
     }
+    return sum;
  }
